@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "test": "mocha",
+    "test": "mocha --recursive",
     "dev": "nodemon server.js"
   },
   "repository": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/mramos360/microservice-orders#readme",
   "dependencies": {
+    "axios": "^0.19.2",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
@@ -28,8 +29,12 @@
     "sequelize-cli": "^5.5.1"
   },
   "devDependencies": {
+    "@pact-foundation/pact": "^9.6.1",
+    "@pact-foundation/pact-node": "^10.2.4",
     "chai": "^4.2.0",
     "mocha": "^7.0.1",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "sinon": "^8.1.1",
+    "supertest": "^4.0.2"
   }
 }
